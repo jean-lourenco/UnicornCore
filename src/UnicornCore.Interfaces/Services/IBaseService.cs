@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnicornCore.Models.Interfaces;
 
 namespace UnicornCore.Interfaces.Services
 {
     public interface IBaseService<T> where T : class, IEntity
     {
-        void Add(T entity);
+        Task AddAsync(T entity);
 
-        void Remove(long id);
+        Task RemoveAsync(long id);
 
-        void Update(T entity);
+        Task UpdateAsync(T entity);
 
         T Find(long id);
 

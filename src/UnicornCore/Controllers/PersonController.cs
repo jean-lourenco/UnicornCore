@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnicornCore.Interfaces.Services;
 using UnicornCore.Models.DatabaseEntity;
 
@@ -39,19 +40,19 @@ namespace UnicornCore.Controllers
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromBody] Person person)
+        public async Task<IActionResult> Post([FromBody] Person person)
         {
             if (person == null || person.Id != 0)
                 return BadRequest();
 
-            _personService.Add(person);
+            await _personService.AddAsync(person);
 
             return CreatedAtRoute("GetPerson", new { id = person.Id }, person);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public IActionResult Put(long id, [FromBody]Person person)
+        public async Task<IActionResult> Put(long id, [FromBody]Person person)
         {
             if (id == 0 || person.Id == 0 || id != person.Id)
                 return BadRequest();
@@ -59,14 +60,14 @@ namespace UnicornCore.Controllers
             if (!_personService.Exists(id))
                 return NotFound();
 
-            _personService.Update(person);
+            await _personService.UpdateAsync(person);
 
             return NoContent();
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        public async Task<IActionResult> Delete(long id)
         {
             if (id == 0)
                 return BadRequest();
@@ -74,7 +75,7 @@ namespace UnicornCore.Controllers
             if (!_personService.Exists(id))
                 return NotFound();
 
-            _personService.Remove(id);
+            await _personService.RemoveAsync(id);
 
             return NoContent();
         }

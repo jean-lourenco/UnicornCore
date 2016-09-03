@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace UnicornCore.Models.Interfaces
 {
     public interface IRepo<T> where T : class, IEntity
     {
-        void Add(T entity);
+        Task AddAsync(T entity);
 
-        void Remove(long id);
+        Task RemoveAsync(long id);
 
-        void Update(T entity);
+        Task UpdateAsync(T entity);
 
         T Find(long id);
 

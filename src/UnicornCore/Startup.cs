@@ -11,6 +11,8 @@ using UnicornCore.Interfaces.Services;
 using UnicornCore.Services;
 using UnicornCore.Models.Repo;
 using UnicornCore.Models.Interfaces;
+using UnicornCore.Models.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace UnicornCore
 {
@@ -39,11 +41,15 @@ namespace UnicornCore
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=UnicornCore.Instance;Trusted_Connection=True;";
+            services.AddDbContext<UnicornDBContext>(options => options.UseSqlServer(connection));
+
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
 
-            services.AddTransient(typeof(IRepo<>), typeof(ConcurrentDictionaryRepo<>));
+            //services.AddTransient(typeof(IRepo<>), typeof(ConcurrentDictionaryRepo<>));
+            services.AddTransient(typeof(IRepo<>), typeof(EntityRepo<>));
             services.AddTransient<IPersonService, PersonService>();
         }
 
