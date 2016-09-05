@@ -9,9 +9,9 @@ namespace UnicornCore.Services.BaseService
 {
     public abstract class BaseService<T> : IBaseService<T> where T : class, IEntity
     {
-        protected IRepo<T> _db { get; }
+        protected IDBContext<T> _db { get; }
 
-        public BaseService(IRepo<T> db)
+        public BaseService(IDBContext<T> db)
         {
             _db = db;
         }

@@ -8,12 +8,12 @@ using UnicornCore.Models.Interfaces;
 
 namespace UnicornCore.Models.Repo
 {
-    public class EntityRepo<T> : IRepo<T> where T : class, IEntity
+    public class EntityContext<T> : IDBContext<T> where T : class, IEntity
     {
         private UnicornDBContext _ctx;
         private DbSet<T> _set;
 
-        public EntityRepo(UnicornDBContext ctx)
+        public EntityContext(UnicornDBContext ctx)
         {
             _ctx = ctx;
             _set = ctx.Set<T>();

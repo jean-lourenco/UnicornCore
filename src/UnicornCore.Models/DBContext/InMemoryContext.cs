@@ -6,7 +6,7 @@ using UnicornCore.Models.Interfaces;
 
 namespace UnicornCore.Models.Repo
 {
-    public class ConcurrentDictionaryRepo<T> : IRepo<T> where T : class, IEntity
+    public class InMemoryContext<T> : IDBContext<T> where T : class, IEntity
     {
         private static ConcurrentDictionary<long, T> _db = new ConcurrentDictionary<long, T>();
 

@@ -7,7 +7,7 @@ namespace UnicornCore.Services
 {
     public class PersonService : BaseService<Person>, IPersonService
     {
-        public PersonService(IRepo<Person> repo) : base(repo)
+        public PersonService(IDBContext<Person> repo) : base(repo)
         {
         }
     }

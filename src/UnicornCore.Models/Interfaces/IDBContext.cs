@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace UnicornCore.Models.Interfaces
 {
-    public interface IRepo<T> where T : class, IEntity
+    public interface IDBContext<T> where T : class, IEntity
     {
         Task AddAsync(T entity);
 

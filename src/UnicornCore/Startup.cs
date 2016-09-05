@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using UnicornCore.Interfaces.Services;
-using UnicornCore.Services;
-using UnicornCore.Models.Repo;
-using UnicornCore.Models.Interfaces;
 using UnicornCore.Models.Infrastructure;
-using Microsoft.EntityFrameworkCore;
+using UnicornCore.Models.Interfaces;
+using UnicornCore.Models.Repo;
+using UnicornCore.Services;
 
 namespace UnicornCore
 {
@@ -48,8 +44,8 @@ namespace UnicornCore
 
             services.AddMvc();
 
-            //services.AddTransient(typeof(IRepo<>), typeof(ConcurrentDictionaryRepo<>));
-            services.AddTransient(typeof(IRepo<>), typeof(EntityRepo<>));
+            services.AddTransient(typeof(IDBContext<>), typeof(InMemoryContext<>));
+            services.AddTransient(typeof(IDBContext<>), typeof(EntityContext<>));
             services.AddTransient<IPersonService, PersonService>();
         }
 
