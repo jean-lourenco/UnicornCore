@@ -18,6 +18,10 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UnicornCore.Interfaces", "s
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UnicornCore.Models", "src\UnicornCore.Models\UnicornCore.Models.xproj", "{0ABF2673-B2E7-4D15-BFAD-D07936A07B90}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A3AE7FE9-983A-4BD0-8A50-3AB0DFA79BA2}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UnicornCore.Tests", "UnicornCore.Tests\UnicornCore.Tests.xproj", "{245CE080-4A41-4180-B403-9D21D12C0169}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,10 @@ Global
 		{0ABF2673-B2E7-4D15-BFAD-D07936A07B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ABF2673-B2E7-4D15-BFAD-D07936A07B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ABF2673-B2E7-4D15-BFAD-D07936A07B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245CE080-4A41-4180-B403-9D21D12C0169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245CE080-4A41-4180-B403-9D21D12C0169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245CE080-4A41-4180-B403-9D21D12C0169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245CE080-4A41-4180-B403-9D21D12C0169}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +57,6 @@ Global
 		{6C33BDEA-3B57-4521-9173-93A36F77370A} = {30A5190A-D471-465B-901D-FA23CBFBBFDD}
 		{90E5C868-F4D1-4912-A523-292C013DBBD8} = {30A5190A-D471-465B-901D-FA23CBFBBFDD}
 		{0ABF2673-B2E7-4D15-BFAD-D07936A07B90} = {30A5190A-D471-465B-901D-FA23CBFBBFDD}
+		{245CE080-4A41-4180-B403-9D21D12C0169} = {A3AE7FE9-983A-4BD0-8A50-3AB0DFA79BA2}
 	EndGlobalSection
 EndGlobal

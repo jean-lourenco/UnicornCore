@@ -16,14 +16,12 @@ namespace UnicornCore.Controllers
             _personService = personService;
         }
 
-        // GET api/values
         [HttpGet]
         public IEnumerable<Person> Get()
         {
             return _personService.GetAll();
         }
 
-        // GET api/values/5
         [HttpGet("{id}", Name = "GetPerson")]
         public IActionResult Get(long id)
         {
@@ -38,7 +36,6 @@ namespace UnicornCore.Controllers
             return Ok(person);
         }
 
-        // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Person person)
         {
@@ -50,7 +47,6 @@ namespace UnicornCore.Controllers
             return CreatedAtRoute("GetPerson", new { id = person.Id }, person);
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(long id, [FromBody]Person person)
         {
@@ -65,7 +61,6 @@ namespace UnicornCore.Controllers
             return NoContent();
         }
 
-        // DELETE api/values/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(long id)
         {

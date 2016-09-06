@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnicornCore.Models.Interfaces;
 
-namespace UnicornCore.Models.Repo
+namespace UnicornCore.Models.DBContext
 {
     public class InMemoryContext<T> : IDBContext<T> where T : class, IEntity
     {
-        private static ConcurrentDictionary<long, T> _db = new ConcurrentDictionary<long, T>();
+        private ConcurrentDictionary<long, T> _db = new ConcurrentDictionary<long, T>();
 
         private long NextId { get { return (_db.Count() > 0 ? _db.Keys.Max() : 0) + 1; } }
 

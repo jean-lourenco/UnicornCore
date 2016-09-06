@@ -5,9 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using UnicornCore.Interfaces.Services;
+using UnicornCore.Models.DBContext;
 using UnicornCore.Models.Infrastructure;
 using UnicornCore.Models.Interfaces;
-using UnicornCore.Models.Repo;
 using UnicornCore.Services;
 
 namespace UnicornCore

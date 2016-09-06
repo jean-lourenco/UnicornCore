@@ -1,7 +1,7 @@
-#:D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\UnicornCore.xproj
-D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\UnicornCore.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\UnicornCore.Interfaces.xproj
-D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\UnicornCore.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\UnicornCore.Models.xproj
-D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\UnicornCore.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\UnicornCore.Services.xproj
+#:D:\Users\Jean\Documents\GitHub\UnicornCore\UnicornCore.Tests\UnicornCore.Tests.xproj
+D:\Users\Jean\Documents\GitHub\UnicornCore\UnicornCore.Tests\UnicornCore.Tests.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\UnicornCore.Interfaces.xproj
+D:\Users\Jean\Documents\GitHub\UnicornCore\UnicornCore.Tests\UnicornCore.Tests.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\UnicornCore.Models.xproj
+D:\Users\Jean\Documents\GitHub\UnicornCore\UnicornCore.Tests\UnicornCore.Tests.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\UnicornCore.Services.xproj
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\UnicornCore.Interfaces.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\UnicornCore.Models.xproj
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\UnicornCore.Services.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\UnicornCore.Interfaces.xproj
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\UnicornCore.Services.xproj|D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\UnicornCore.Models.xproj

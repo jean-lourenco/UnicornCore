@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnicornCore.Models.Infrastructure;
 using UnicornCore.Models.Interfaces;
 
-namespace UnicornCore.Models.Repo
+namespace UnicornCore.Models.DBContext
 {
     public class EntityContext<T> : IDBContext<T> where T : class, IEntity
     {
