@@ -42,7 +42,7 @@ namespace UnicornCore.Controllers
             if (person == null || person.Id != 0)
                 return BadRequest();
 
-            await _personService.AddAsync(person);
+            await _personService.AddAsync(person, true);
 
             return CreatedAtRoute("GetPerson", new { id = person.Id }, person);
         }
@@ -56,7 +56,7 @@ namespace UnicornCore.Controllers
             if (!_personService.Exists(id))
                 return NotFound();
 
-            await _personService.UpdateAsync(person);
+            await _personService.UpdateAsync(person, true);
 
             return NoContent();
         }
@@ -70,7 +70,7 @@ namespace UnicornCore.Controllers
             if (!_personService.Exists(id))
                 return NotFound();
 
-            await _personService.RemoveAsync(id);
+            await _personService.RemoveAsync(id, true);
 
             return NoContent();
         }

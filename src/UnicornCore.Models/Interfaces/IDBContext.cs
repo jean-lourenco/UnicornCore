@@ -5,11 +5,11 @@ namespace UnicornCore.Models.Interfaces
 {
     public interface IDBContext<T> where T : class, IEntity
     {
-        Task AddAsync(T entity);
+        Task AddAsync(T entity, bool commit = false);
 
-        Task RemoveAsync(long id);
+        Task RemoveAsync(long id, bool commit = false);
 
-        Task UpdateAsync(T entity);
+        Task UpdateAsync(T entity, bool commit = false);
 
         T Find(long id);
 
@@ -18,5 +18,7 @@ namespace UnicornCore.Models.Interfaces
         bool Exists(long id);
 
         bool Exists(T entity);
+
+        Task SaveChangesAsync();
     }
 }

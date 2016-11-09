@@ -211,3 +211,4 @@ __pycache__/
 bin/
 obj/
 project.lock.json
+*.pdb

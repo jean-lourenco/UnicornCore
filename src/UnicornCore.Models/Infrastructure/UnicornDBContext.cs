@@ -10,5 +10,6 @@ namespace UnicornCore.Models.Infrastructure
         }
 
         public DbSet<Person> Persons { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

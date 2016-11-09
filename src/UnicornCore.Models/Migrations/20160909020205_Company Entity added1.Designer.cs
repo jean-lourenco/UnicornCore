@@ -8,9 +8,10 @@ using UnicornCore.Models.Infrastructure;
 namespace UnicornCore.Models.Migrations
 {
     [DbContext(typeof(UnicornDBContext))]
-    partial class UnicornDBContextModelSnapshot : ModelSnapshot
+    [Migration("20160909020205_Company Entity added1")]
+    partial class CompanyEntityadded1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")

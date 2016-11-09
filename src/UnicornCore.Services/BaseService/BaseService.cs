@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnicornCore.Interfaces.Services;
 using UnicornCore.Models.Interfaces;
@@ -16,9 +14,9 @@ namespace UnicornCore.Services.BaseService
             _db = db;
         }
 
-        public async Task AddAsync(T entity)
+        public async Task AddAsync(T entity, bool commit = false)
         {
-            await _db.AddAsync(entity);
+            await _db.AddAsync(entity, commit);
         }
 
         public bool Exists(T entity)
@@ -41,14 +39,19 @@ namespace UnicornCore.Services.BaseService
             return _db.GetAll();
         }
 
-        public async Task RemoveAsync(long id)
+        public async Task RemoveAsync(long id, bool commit = false)
         {
-            await _db.RemoveAsync(id);
+            await _db.RemoveAsync(id, commit);
         }
 
-        public async Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity, bool commit = false)
         {
-            await _db.UpdateAsync(entity);
+            await _db.UpdateAsync(entity, commit);
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _db.SaveChangesAsync();
         }
     }
 }

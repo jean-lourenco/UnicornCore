@@ -12,7 +12,7 @@ namespace UnicornCore.Models.DBContext
 
         private long NextId { get { return (_db.Count() > 0 ? _db.Keys.Max() : 0) + 1; } }
 
-        public Task AddAsync(T entity)
+        public Task AddAsync(T entity, bool commit = false)
         {
             entity.Id = NextId;
             _db.TryAdd(entity.Id, entity);
@@ -40,7 +40,7 @@ namespace UnicornCore.Models.DBContext
             return _db.Values;
         }
 
-        public Task RemoveAsync(long id)
+        public Task RemoveAsync(long id, bool commit = false)
         {
             T temp;
 
@@ -49,10 +49,15 @@ namespace UnicornCore.Models.DBContext
             return Task.FromResult<object>(null);
         }
 
-        public Task UpdateAsync(T entity)
+        public Task UpdateAsync(T entity, bool commit = false)
         {
             _db[entity.Id] = entity;
 
+            return Task.FromResult<object>(null);
+        }
+
+        public Task SaveChangesAsync()
+        {
             return Task.FromResult<object>(null);
         }
     }

@@ -19,16 +19,18 @@ namespace UnicornCore.Models.DBContext
             _set = ctx.Set<T>();
         }
 
-        public async Task AddAsync(T entity)
+        public async Task AddAsync(T entity, bool commit = false)
         {
             try
             {
                 _set.Add(entity);
-                await _ctx.SaveChangesAsync();
+
+                if (commit)
+                    await _ctx.SaveChangesAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -52,30 +54,39 @@ namespace UnicornCore.Models.DBContext
             return _set.AsNoTracking();
         }
 
-        public async Task RemoveAsync(long id)
+        public async Task RemoveAsync(long id, bool commit = false)
         {
             try
             {
                 _set.Remove(Find(id));
-                await _ctx.SaveChangesAsync();
+
+                if (commit)
+                    await _ctx.SaveChangesAsync();
             }
-            catch(Exception ex)
+            catch(Exception)
             {
-                throw ex;
+                throw;
             }
         }
 
-        public async Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity, bool commit = false)
         {
             try
             {
                 _set.Update(entity);
-                await _ctx.SaveChangesAsync();
+
+                if (commit)
+                    await _ctx.SaveChangesAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _ctx.SaveChangesAsync();
         }
     }
 }
