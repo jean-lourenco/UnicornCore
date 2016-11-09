@@ -10,7 +10,7 @@ namespace UnicornCore.Models.DBContext
     {
         private ConcurrentDictionary<long, T> _db = new ConcurrentDictionary<long, T>();
 
-        private long NextId { get { return (_db.Count() > 0 ? _db.Keys.Max() : 0) + 1; } }
+        private long NextId => (_db.Count() > 0 ? _db.Keys.Max() : 0) + 1;
 
         public Task AddAsync(T entity, bool commit = false)
         {
