@@ -79,6 +79,7 @@
 -r:"C:\Users\Jean\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\bin\src\UnicornCore.Interfaces\bin\Debug\netstandard1.6\UnicornCore.Interfaces.dll"
 -r:"D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\bin\src\UnicornCore.Models\bin\Debug\netstandard1.6\UnicornCore.Models.dll"
+"D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\CompanyService.cs"
 "D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\PersonService.cs"
 "D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\BaseService\BaseService.cs"
 "D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Services\Properties\AssemblyInfo.cs"

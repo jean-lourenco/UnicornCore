@@ -80,6 +80,7 @@
 --reference:C:\Users\Jean\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Jean\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\DatabaseEntity\BaseEntity.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\DatabaseEntity\Company.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\DatabaseEntity\Person.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\DBContext\EntityContext.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\DBContext\InMemoryContext.cs
@@ -88,5 +89,9 @@ D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Interfaces\IDB
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Interfaces\IEntity.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\20160903195958_Initial-Migration.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\20160903195958_Initial-Migration.Designer.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\20160909020045_Company Entity added.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\20160909020045_Company Entity added.Designer.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\20160909020205_Company Entity added1.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\20160909020205_Company Entity added1.Designer.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Migrations\UnicornDBContextModelSnapshot.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\Properties\AssemblyInfo.cs

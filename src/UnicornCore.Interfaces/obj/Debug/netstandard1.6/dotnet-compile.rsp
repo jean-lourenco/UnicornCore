@@ -82,4 +82,5 @@
 --reference:D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Models\bin\Debug\netstandard1.6\UnicornCore.Models.dll
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\Properties\AssemblyInfo.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\Services\IBaseService.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\Services\ICompanyService.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore.Interfaces\Services\IPersonService.cs

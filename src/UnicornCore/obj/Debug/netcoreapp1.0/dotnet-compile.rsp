@@ -208,4 +208,5 @@
 --resource:"D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\obj\Debug\netcoreapp1.0\UnicornCoredotnet-compile.deps.json",UnicornCore.deps.json
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\Program.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\Startup.cs
+D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\Controllers\CompanyController.cs
 D:\Users\Jean\Documents\GitHub\UnicornCore\src\UnicornCore\Controllers\PersonController.cs
